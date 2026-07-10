@@ -1,0 +1,14 @@
+FOM validation with manufactured Navier-Stokes solution
+=================================================================
+
+ mu0  mu1  err_velocity  err_u_x  err_u_y    err_p  newton_iterations  relative_increment  converged  tot_dofs
+ 0.5  1.2      0.015584 0.010756 0.011277 0.062143                  3        6.978593e-08       True       287
+ 1.0  2.0      0.015137 0.010715 0.010693 0.083573                  3        7.823151e-08       True       287
+ 3.0  2.5      0.015023 0.010829 0.010413 0.162693                  3        1.565890e-08       True       287
+ 7.0  1.5      0.015018 0.010883 0.010350 0.290898                  3        5.435462e-10       True       287
+10.0  3.0      0.015019 0.010896 0.010338 0.366675                  3        1.944180e-09       True       287
+
+The exact manufactured solution is:
+u_x = 0.5 * mu1 * sin(pi*x)^2 * sin(pi*y)*cos(pi*y)
+u_y = -0.5 * mu1 * sin(pi*y)^2 * sin(pi*x)*cos(pi*x)
+p   = mu1 * sin(pi*x)*sin(pi*y)

@@ -1,0 +1,6 @@
+{
+    "lambda_pde": 10.0,
+    "lambda_divergence": 5.0,
+    "lambda_boundary": 1.0,
+    "lambda_pressure_anchor": 1.0
+}
